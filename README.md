@@ -5,14 +5,12 @@ Install Node.js: Ensure you have Node.js installed on your machine. You can down
 Create Project Directory:
 
 Open your terminal or command prompt.
-
 Create a new directory for your project:
 
 mkdir transactions-app
 cd transactions-app
 
 Initialize a Node.js Project:
-
 Run the following command to create a package.json file:
 
 npm init -y
@@ -21,6 +19,8 @@ Install Required Packages:
 Install Express, SQLite, SQLite3, Body-Parser, CORS,nodemon, and Path:
 
 npm install express sqlite sqlite3 body-parser cors path nodemon
+
+
 
 Create Required Files:
 
@@ -34,26 +34,30 @@ insertData.js: This file can be used to insert sample data into the transactions
 
 transactions.db: This file will be automatically created when you run the application for the first time.
 
-Run the script to create the table:
 
+
+
+Run the script to create the table:
 node createtable.js
 
 Run the script to insert the table:
-
 node insertData.js
 
 Run the Application:
 node app.js
 
 Run the server using:
-
 The server should start and listen on http://localhost:3636.
+
+
+
 
 API Documentation:
 Base URL
 http://localhost:3636
 
 Endpoints
+
 POST /transactions
 
 Description: Create a new transaction.
@@ -143,6 +147,5 @@ Body:
 "balance": number
 }
 
-run command:npm start
 
 Screenshot Folder link: https://drive.google.com/drive/folders/1moFqZkUvHyicdL7lTuktdZKjfK3H7pKo?usp=sharing
